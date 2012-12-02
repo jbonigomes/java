@@ -10,4 +10,3 @@
 - Make use of adapters in programs
 - Explain the purpose of inner classes and use these classes appropriately
 - Explain the purpose of the toString method
-

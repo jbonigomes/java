@@ -35,7 +35,7 @@ public class MixedListTester
 			}
 			else
 			{
-				employeeList[i] = new PartTimeEmloyee(num, name, pay);
+				employeeList[i] = new PartTimeEmployee(num, name, pay);
 			}
 			System.out.println();
 		}
