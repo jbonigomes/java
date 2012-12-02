@@ -8,4 +8,4 @@
 - Explain how the classpath environment variable is used to locate class files
 - Identify the core packages in the Java API
 
-More description to be added later
+Most of this chapter refers back to chapter 11 and 12, where the case study is developed, need to come back to it after going through those chapters if time allows
