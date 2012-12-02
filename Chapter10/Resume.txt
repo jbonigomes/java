@@ -1,0 +1,27 @@
+Chapter 10
+
+Objectives
+	Identify and use some of the common components of the Java Swing package
+	Program graphics components to handle mouse-click events
+	Describe the role of layout managers
+	Use the FlowLayout and BorderLayout managers
+	Make use of compound containers
+
+To exit a program at any point use:
+
+	System.exit(0);
+
+To exit when using JFrame and the user preses the close arrow:
+
+	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+This is a very dense subject, please refer to the code examples for more details
+
+One interesting point raised here though, when converting a String to Double, we can use the wrapper Double class, likewise, we could use the Integer helper class if we want to parse it to int:
+
+	String str = "34.00";
+	Double d = Double.parseDouble(str);
+	
+The last thing is watch out for the import statements when building GUI's
+
+The Programming exercises for this chapter are still outstanding

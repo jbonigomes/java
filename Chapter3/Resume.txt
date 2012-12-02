@@ -1,0 +1,33 @@
+Chapter 3
+
+Explain the term iteration
+
+	Iteration is the form of program control that allows us to instuct the computer to carry out a task over and over again by repeating a section of code
+
+Explain the term input validation and write simple validation routines
+
+	Input validation is the art of sanity checking external input into a given program.
+	This process aims to ensure that no malicious or errouneous entries get absorbed by the code
+
+public class Hello {
+		public static void main(String[] args) {
+			
+			// Repeat a section of code with a for loop
+			for(int i = 0; i < 10; i++)
+			{
+				// this is best used when we know how many times we will have to iterate
+			}
+
+			// Repeat a section of code with a while loop
+			while(/* some condition is true */)
+			{
+				// this is best used when we don't know how many times we will iterate
+			}
+
+			// Repeat a section of code with a do...while loop
+			do
+			{
+				// this is best used when we don't know how many times we will iterate but we know we want to iterate at least once
+			} while(/* something is true */);
+		}
+	}

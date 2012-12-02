@@ -1,0 +1,28 @@
+Chapter 4
+
+Explain the meaning of the term method
+
+	A method is a function within a class that will perform and action, this action is simply an encapsulated piece of code
+
+Declare and define methods
+	
+	The main method is for example the entry point method for any given Java program
+
+Call a method
+
+	Simply type in the method's name followed by (), if the method accepts parameters then they must be written within the brackets, multiple parameters should be separated by a comma
+
+Explain the meaning of the terms actual parameters and formal parameters
+
+	Actual parameters are the actual values we send to a method:
+		price = addTax(price, tax);
+	Formal parameters are the parameters declared int the signature of a method and are awaiting for values to be passed in
+		public void addTax(double price, double tax)
+
+Identify the scope of a particular variable
+
+	The scope of a value dictates where the value can be used, for example if int i was declared inside a loop, it is then not accesible outside the loop
+
+Explain the meaning of the term polymorphism
+
+	Polymorphism is the techinic used to send the same message but have have different behavious depending on the situation, method overloading is a good example of polymorphism, where two methods have the same name but accept different parameters

@@ -1,0 +1,96 @@
+Chapter 9
+
+Objectives
+	
+	Describe each stage of the software development process
+	Document your code so that it is easy to maintain
+	Distinguish between compile-time erros and run-time errors
+	Test a program using the strategies of unit testing and integration testing
+	Generate test data using the strategies of black box testing, white box testing and stress testing
+	Document your test results professionally using a test log
+	Format your output to improve the usability of your program
+
+Maintainability
+	Keep the access modifiers to the data attributes as private (encapsulation, information-hiding)
+	Documentation:
+		Manual
+		Complete class diagram
+		Clear method definitions (parameter and return types, plus pseudocode when appropriate)
+		Comments
+		Meaningful data names
+		Constants in place of fixed literal numbers
+		Consistant and clear indentation
+		Javadoc
+
+			/** This is an example of Javadoc comments, it can also have tags starting with @
+			 *
+			 *  @author Jose B. Gomes
+			 *  @version 1 december 2012
+			 *  @param name of parameter and description
+			 *  @return description of return value like 'returns the value of the reactors current temperature'
+			 */
+
+		Use it before the class declaration and before the methods
+
+		The HTML can be created running:
+
+			javadoc ClassName.java
+
+Reliability
+	A reliable program is a program that does what is supposed to do, two common types of errors:
+
+		Compile-time
+			The compiler will tell
+
+		Run-time
+			Validation
+				Meets requirements
+			Verification
+				Meets your own understanding of the requirements (program logic)
+					Unit testing followed by integration testing
+	Unit testing
+		Test each method of a class before doing the integration test
+	Integration testing
+		Recompile all classes before proceeding
+
+	The approaches for Unit and Integration testing can be:
+
+		Black box testing
+			Ignore implementation, test for:
+				Extreme values
+				Divide by zero
+				Grade inputs (a group of inputs may be deemed to produce the same output)
+				Test a few entries for all grades of inputs
+				Boundary values
+			The whole idea is to ensure that the input given produces the expected output
+
+		White box testing
+			Very similar to black box, but when creating the test cases you are allowed to peak into the code to try to figure out all possibilities of failure
+
+	Test log
+		Write the test sheets and record every round of test, so that regression testing can be done		
+
+Robusteness
+	A robust program is a program that doesn't crash
+		Validate input
+		Stress testing, for instance try to overfill an array...
+		Sanity check code, aim to write code that does not cause exceptions to happen
+
+Usability
+	Manual
+		how to install
+		how to use
+		troubleshooting guide
+		check for errors before they are input
+		text formatting
+			import java.text.*;
+				can do things like
+					.	insert a decimal point
+					,	insert a comma
+					0	display a single digit
+					#	display a single digit or empty if not present
+
+					DecimalFormat df = new DecimalFormat("000,000.000");
+					double someNumber = 12345.6789;
+					double output = df.format(someNumber);
+

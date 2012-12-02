@@ -1,0 +1,55 @@
+Chapter 2
+
+Explain the difference between sequence and selection
+
+	Sequence is the order in which instructions are executed in a program
+	Selection is the art of controling the sequence
+
+	public class Hello {
+		public static void main(String[] args) {
+			
+			// Use an if statement to make a single choice in a program
+			if(/* something is true */)
+			{
+				// then do this
+			}
+
+			// Use an if...else statement to make a choice between two options in a program
+			if(/* something is true */)
+			{
+				// then do this
+			}
+			else
+			{
+				// else do something else
+			}
+
+			// Use nested if...else statements to make multiple choices in a program
+			if(/* something is true */)
+			{
+				// then do this
+			}
+			else if(/* something else is true */)
+			{
+				if(/* even something else is true */)
+				{
+					// then do this
+				}
+			}
+
+			// Use a switch statement to make multiple choices in a program
+			switch(/* some value */)
+			{
+				case 'a':
+					// do something
+				break;
+
+				case 'b': case 'c':
+					// do something
+				break;
+
+				default:
+					// do something if all conditions above fail
+			}
+		}
+	}

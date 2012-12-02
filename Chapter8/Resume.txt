@@ -1,0 +1,83 @@
+Chapter 8
+
+Objectives
+	
+	Explain the term inheritance
+
+		A class can be extended in functionality by creating another class that extends the first class
+
+	Design inheritance structures using UML notation
+
+	Implement inheritance reletionships in Java
+
+	Distinguish between method overriding and method overloading
+
+		Method overloading is when a method with the same name as another method has different parameters, this is within the same class
+		Method overriding however, is when a method of a sub-class is declared with the same name as the method in the super class
+
+	Explain the term type cast and implement this in Java
+
+		// write about type casting classes
+
+	Explain the use fo the abstract modifier and the final modifier when applied to both classes and methods
+
+		An abstract class cannot be instanciated, they should be declared as abstract when we are never going to have objects of this class
+
+		A method can be declared as abstract so that it forces the subclasses to implement it
+
+		public abstract class Employee
+		{
+			abstract public String getStatus();
+		}
+
+		The final modifier can also be used in a class, so that it cannot be sub-classed
+
+		public final class SomeClass {}
+
+		In a method, it means it cannot be overridden
+
+		public final void someMethod() {}
+
+	Describe the way in which all Java classes are derived from the Object class
+
+		All Objects derive from the Java Object class, this allows creation of more generic programs, for instance, if we change the BankAccout:
+
+			public Object getItem(int positionIn)
+			{
+				if(positionIn < 1 || positionIn > total)
+				{
+					return null;
+				}
+				else
+				{
+					return list[positionIn - 1];
+				}
+			}
+
+			if we then need to use the returned object to access BankAccount specific methods (we know they are there but Java will not allow us to access it, we must tell the compiler that it's ok), type cast it:
+
+			BankAccount myAccount = (BankAccount)objectList.getItem(3);
+
+	Wrapper classes and autoboxing
+
+		Object[] anArray = new Object[20];
+
+		anArray[0] = new Integer(37);
+
+	As per the example above, Java provides wrapper classes for the primitive types, it is the primitive type name fully written and starting with a capital letter, e.g. Integer, Character, Float and Double.
+
+	From Java 5 onwards, we can use autoboxing, so that the converstion will happen automaticaly
+
+		anArray[0] = 37;
+
+	To retrieve the value and assign to an int:
+
+		Integer intObject = (Integer) anArray[0];
+		int x = intObject.getValue();
+
+	Java 5 onwards allows unboxing doing the converstion automatically:
+
+		int x = (Integer)anArray[0];
+
+	Those techniques can be used to create mixed lists
+

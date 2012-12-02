@@ -1,0 +1,19 @@
+Chapter 7
+
+Objectives:
+
+	Design classes using the notation of the Unified Modeling Language (UML)
+	Write the Java code for a specified class
+	Explain the difference between public and private access to attributes and methods
+
+		on a class variable, private means it can only be accessed within the class and public by any other class
+		likewise, for methods, the same rule applies.
+		We generally declare methods as public, unless they are the class helper methods and variables are almost always declared as private
+
+	Explain the use of the static keyword
+
+		When used on a class variable, it means that the variable is a class variable, changing it will change all objects too
+		When used on a method, it means that the method can then be accessed without the need to instanciate the class
+
+	Pass objects as parameters
+	Implement collection classes based on arrays

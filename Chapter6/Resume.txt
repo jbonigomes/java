@@ -1,0 +1,35 @@
+Chapter 6
+
+Explain the meaning of the term object-oriented
+
+	Object oriented programming consists of defining one or more classes that interact with each other in order to modularize a complex program promoting code reuse, polymorphism, encapsulation and so on...
+
+Explain the concept of encapsulation
+
+	Encapusulation or information hidding is the ability object oriented software development approaches give us in order to deny direct access to data from another class
+
+Explain the terms class and object
+
+	A class is the blue print of an object, an object is an instance of a class.
+
+Create objects in Java
+
+	Must be done using the new keyword:
+		Oblong myOblong = new Oblong(length, height);
+
+Call the methods of an object
+
+	Must be done with a . then the name of the method:
+		String str = new String("Hello");
+		str.length();
+
+Create and use arrays of objects
+
+	Very handy when creating a collection of objects in a class;
+		Oblong[] myOblongArray = new Oblong[3];
+
+A constructor is a special method, with the same name as the class it belongs to, it's principle is to allow some action to happen when and object is instanciated from a given class. I.E. when the new keyword is called. A construct is not mandatory in Java, Java will use a "default construct" if a given class was not provided with one.
+
+When calling a method from one class from another class, the method must be static and the other class must be available to the compiler
+
+Please remember that an array of objects sets up an array of referencess

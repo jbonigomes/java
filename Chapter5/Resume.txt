@@ -1,0 +1,37 @@
+Chapter 5
+
+Create arrays of primitive types
+
+	- Declare an array variable
+	- Allocate memory to store the element
+
+	int[] someArray;
+	someArray = new int[10];
+
+	or
+
+	double[] temperature = new double[7];
+
+	or
+
+	double[] temperature = {1, 2, 3, 4, 5};
+
+	or
+
+	temperature[0] = 1;
+
+Use loops to process arrays
+
+	When creating loops to process arrays, a built-in function .length is quite useful
+
+Use an enhanced for loop to process an array
+
+	for(double item : temperature)
+	{
+		System.out.println(item);
+	}
+
+Use arrays as method inputs and outputs
+
+	Simply pass the variable name, no need for square brackets
+	Remember that arrays are objects and so are passed by reference, meaning that if you pass an array to a method and you change it, you are changing the actual array

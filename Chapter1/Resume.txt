@@ -1,0 +1,78 @@
+Chapter 1
+
+Explain the meaning of the word software
+
+	The word software is the name given to a single program or a set of programs.
+	Application software:
+		Word, Sreadsheets, accounts programs
+	System software:
+		Operating systems and network software
+
+Explain how Java programs are compiled and run
+
+	The Java compiler, compiles the code into Java byte code, the Java byte code can then be interpreted by a Java Virtual Machine (JVM) and so run as a platform independand software.
+
+	In the terminal:
+		To compile:
+			javac myProgram.java
+				--> myProgram.class
+		To run
+			java myProgram
+
+Write Java programs that display text on the screen
+
+	public class Hello {
+		public static void main(String[] args) {
+			System.out.println("Hello World!");
+		}
+	}
+
+Distinguish between the eight built-in primitive types of Java
+
+	byte	  -128					to 127
+	short	  -32768				to 32767
+	int		  -2147483648			to 2147483647
+	long	  -9223372036854775808	to 9223372036854775807
+	float	+/-1.4 * 10^-45			to 3.4 * 10^38
+	double	+/-4.9 * 10^-324		to 1.8 * 10^308
+	char	Unicode character set
+	boolean	true or false
+
+Declare and assign values to variable
+
+	Declare
+		int i;
+	Assign
+		i = 1;
+
+Create Constant values with the keyword final
+
+	final int HOURS = 30;
+
+Join messages and values in output commands by using the concatenation (+) operator
+
+	System.out.println("Hello " + "World");
+
+Use the input methods of the Scanner class to get data from the keyboard
+
+	import java.util.Scanner;
+	// or could write as:
+	// import java.util.*;
+
+	public class Hello {
+		public static void main(String[] args) {
+			Scanner sc = new Scanner(System.in);
+		}
+	}
+
+Design the functionality of a method using pseudocode
+
+	BEGIN
+		DISPLAY program title
+		DISPLAY prompt for price
+		ENTER price
+		DISPLAY prompt for tax
+		ENTER tax
+		SET price TO price * (1 + tax/100)
+		DISPLAY new price
+	END
