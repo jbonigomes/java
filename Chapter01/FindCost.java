@@ -9,5 +9,6 @@ public class FindCost
 		price = 500;
 		tax = 17.5;
 		price = price * (1 + tax/100);
+    // this is a comment (Zé)
 	}
 }
