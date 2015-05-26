@@ -4,6 +4,7 @@ public class FindCost
 {
 	public static void main(String[] args)
 	{
+    // this is a test comment
 		double price, tax;
 		price = 500;
 		tax = 17.5;
